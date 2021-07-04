@@ -83,6 +83,8 @@
 </template>
 
 <script>
+import PreboardingPage from '@/components/preboarding/Page'
+
 import TimelineItem from './TimelineItem'
 import TaskModal from './modals/TaskModal'
 import ResourceModal from './modals/ResourceModal'
@@ -92,7 +94,6 @@ import ToDoModal from './modals/ToDoModal'
 import IntroductionModal from './modals/IntroductionModal'
 import PreboardingPart from './PreboardingPart'
 import AutoAddTimeLineItem from './AutoAddTimeLineItem'
-import PreboardingPage from '@/components/preboarding/Page'
 export default {
   components: { ExternalMessageModal, TimelineItem, PreboardingPage, IntroductionModal, TaskModal, ResourceModal, BadgeModal, ToDoModal, PreboardingPart, AutoAddTimeLineItem },
   props: {

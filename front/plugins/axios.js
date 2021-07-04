@@ -18,6 +18,7 @@ import Integrations from '~/services/api/Integrations'
 export default function ({ store, $axios, redirect }, inject) {
   $axios.interceptors.request.use(
     function (config) {
+      config.withCredentials = true
       config.headers['x-csrftoken'] = store.state.token
       config.headers['Content-Language'] = store.state.org.user_language
       delete config.headers.common.Authorization

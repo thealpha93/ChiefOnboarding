@@ -74,15 +74,16 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL || 'http://0.0.0.0:8000',
-    credentials: true
+    baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000/',
+    credentials: true,
+    withCredentials: true
   },
 
   auth: {
     strategies: {
       local: {
         endpoints: {
-          login: { url: '/api/auth/login/', method: 'post', propertyName: 'token' },
+          login: { url: '/api/auth/login/', method: 'post', propertyName: 'token', withCredentials: true },
           logout: { url: '/api/auth/logout/', method: 'post' },
           user: { url: '/api/auth/user/', method: 'get', propertyName: 'user' }
         }

@@ -12,8 +12,8 @@
 
 <script>
 import Mustache from 'mustache'
-import ToDoModal from './ToDoModal'
 import BadgeModal from '@/components/portal/badge/BadgeModal'
+import ToDoModal from './ToDoModal'
 
 export default {
   name: 'ToDoItem',

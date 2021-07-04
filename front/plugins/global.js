@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import moment from 'moment'
-import LoadingIcon from '~/components/general/LoadingIcon.vue'
+
+import VTextAreaEmoji from '@/components/general/VTextAreaEmoji'
+import SelectTemplates from '@/components/general/SelectTemplates'
+
 import VFile from '~/components/general/VFile.vue'
 import TemplateComp from '~/components/general/TemplateComp.vue'
 import TemplateCompInner from '~/components/general/TemplateCompInner.vue'
@@ -8,8 +11,7 @@ import TagsSelector from '~/components/general/TagsSelector.vue'
 import VTextFieldEmoji from '~/components/general/VTextFieldEmoji.vue'
 import CustomForm from '~/components/general/CustomForm.vue'
 import Editor from '~/components/general/editor/Editor.vue'
-import VTextAreaEmoji from '@/components/general/VTextAreaEmoji'
-import SelectTemplates from '@/components/general/SelectTemplates'
+import LoadingIcon from '~/components/general/LoadingIcon.vue'
 
 Vue.component('LoadingIcon', LoadingIcon)
 Vue.component('TemplateCompInner', TemplateCompInner)

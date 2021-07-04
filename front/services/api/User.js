@@ -16,8 +16,11 @@ export default (axios, store) => ({
     })
   },
   login (payload) {
-    return axios.post('api/auth/login', payload).then((response) => {
-      axios.defaults.headers.common['x-csrftoken'] = Cookies.get('csrftoken')
+    return axios.post('api/auth/login', payload, { withCredentials: true }).then((response) => {
+      console.log(response)
+      const csrftoken = Cookies.get('csrftoken')
+      console.log('here inside the post', csrftoken)
+      axios.defaults.headers.common['x-csrftoken'] = csrftoken
       return response.data
     }).catch((error) => {
       return Promise.reject(error.response.data)

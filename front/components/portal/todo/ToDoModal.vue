@@ -27,8 +27,8 @@
 
 <script>
 import Mustache from 'mustache'
-import ContentDisplay from '../ContentDisplay'
 import CustomForm from '@/components/preboarding/CustomForm'
+import ContentDisplay from '../ContentDisplay'
 
 export default {
   name: 'ToDoModal',
