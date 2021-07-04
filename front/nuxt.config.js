@@ -74,7 +74,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.BASE_URL || 'http://127.0.0.1:8000/',
+    baseURL: process.env.BASE_URL || 'http://13.233.23.39/',
     credentials: true,
     withCredentials: true
   },
